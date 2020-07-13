@@ -12,7 +12,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
-    "dev": "rollup -cw",
+    "dev": "start-storybook -p 8888",
     "tsc": "tsc",
     "lint": "eslint --ext .ts,.tsx .",
     "test": "jest --config \"./config/jest.config.js\"",
@@ -21,9 +21,16 @@
     "test:coverage-ci": "jest --ci --runInBand --coverage --config \"./config/jest.config.js\""
   },
   "peerDependencies": {
-    "react": "^16.8.6",
-    "react-art": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-native-web": "^0.11.2"
+    "react": "^16.13.1",
+    "react-art": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native-web": "^0.13.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^5.3.19",
+    "babel-loader": "^8.1.0"
   }
 }

@@ -1,8 +1,6 @@
 {
   "files": [],
   "references": [
-    { "path": "ui" },
-    { "path": "form" },
-    { "path": "docs" },
+    { "path": "ui" }
   ]
 }
